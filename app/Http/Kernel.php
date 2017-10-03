@@ -58,5 +58,6 @@ class Kernel extends HttpKernel
         'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'cors' => \App\Http\Middleware\Cors::class,
+        'client_credentials'     => \Laravel\Passport\Http\Middleware\CheckClientCredentials::class,
     ];
 }
